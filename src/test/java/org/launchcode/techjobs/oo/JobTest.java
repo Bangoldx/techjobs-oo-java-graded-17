@@ -22,8 +22,6 @@ public class JobTest {
         Job fullJob = new Job("Product test", new Employer("ACME"), new Location("Desert"),
                 new PositionType("Quality control"), new CoreCompetency("Persistence"));
 
-
-//        System.out.println(fullJob.getName() instanceof String);
         assertTrue(fullJob.getName() instanceof String);
         assertEquals("Product test", fullJob.getName());
 
@@ -50,7 +48,6 @@ public class JobTest {
 
         System.out.println(fullJob1.equals(fullJob2));
         assertFalse(fullJob1.equals(fullJob2));
-
     }
 
     @Test
@@ -58,10 +55,8 @@ public class JobTest {
         Job fullJob = new Job("Product test", new Employer("ACME"), new Location("Desert"),
                 new PositionType("Quality control"), new CoreCompetency("Persistence"));
 
-
         assertEquals(fullJob.toString().startsWith(System.lineSeparator()), true);
         assertEquals(fullJob.toString().endsWith(System.lineSeparator()), true);
-
     }
 
     @Test
@@ -88,7 +83,7 @@ public class JobTest {
     }
 
     @Test
-    public void testToStringHandlesEmptyField(){
+    public void testToStringHandlesEmptyField() {
 
         Job fullJob = new Job("Product test", new Employer(""), new Location("Desert"),
                 new PositionType("Quality control"), new CoreCompetency(""));
@@ -106,6 +101,16 @@ public class JobTest {
                 System.lineSeparator() +
                 "Core Competency: Data not available" +
                 System.lineSeparator();
+
+        assertEquals(printString, fullJob.toString());
+    }
+
+    @Test
+    public void isMissingJob() {
+        Job fullJob = new Job("", new Employer(""), new Location(""),
+                new PositionType(""), new CoreCompetency(""));
+
+        String printString = "OOPS! This job does not seem to exist.";
 
         assertEquals(printString, fullJob.toString());
     }

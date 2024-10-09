@@ -99,7 +99,7 @@
   }
 }]]></component>
   <component name="RunManager" selected="Gradle.techjobs-oo-java-graded-17 [test]">
-    <configuration name="JobTest.testJobsForEquality" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="JobTest.isMissingJob" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -112,7 +112,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.launchcode.techjobs.oo.JobTest.testJobsForEquality&quot;" />
+            <option value="&quot;org.launchcode.techjobs.oo.JobTest.isMissingJob&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -230,7 +230,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.JobTest.testJobsForEquality" />
+      <item itemvalue="Gradle.JobTest.isMissingJob" />
       <item itemvalue="Gradle.JobTest.testToStringContainsCorrectLabelsAndData" />
       <item itemvalue="Gradle.JobTest.testToStringHandlesEmptyField" />
       <item itemvalue="Gradle.JobTest.testToStringStartsAndEndsWithNewLine" />
@@ -239,11 +239,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.JobTest.isMissingJob" />
+        <item itemvalue="Gradle.techjobs-oo-java-graded-17 [test]" />
         <item itemvalue="Gradle.JobTest.testToStringContainsCorrectLabelsAndData" />
         <item itemvalue="Gradle.JobTest.testToStringHandlesEmptyField" />
-        <item itemvalue="Gradle.techjobs-oo-java-graded-17 [test]" />
         <item itemvalue="Gradle.JobTest.testToStringStartsAndEndsWithNewLine" />
-        <item itemvalue="Gradle.JobTest.testJobsForEquality" />
       </list>
     </recent_temporary>
   </component>
